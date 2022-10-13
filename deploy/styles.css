@@ -391,7 +391,7 @@ textarea {
     Footer
 ============= */
 #hero {
-  background-image: url("../img/hero1.jpg");
+  background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -403,28 +403,23 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 1024px) {
-  #hero #overlay section {
-    display: flex;
-  }
-}
-#hero #overlay section section h1 {
+#hero #overlay section h1 {
   color: var(--white);
   font-family: "Gruppo", cursive;
   font-weight: 400;
   font-size: 1.875rem;
 }
 @media (min-width: 768px) {
-  #hero #overlay section section h1 {
+  #hero #overlay section h1 {
     font-size: 3.125rem;
   }
 }
 @media (min-width: 1024px) {
-  #hero #overlay section section h1 {
+  #hero #overlay section h1 {
     font-size: 5.625rem;
   }
 }
-#hero #overlay section section button {
+#hero #overlay section button {
   border: none;
   background-color: var(--red);
   color: var(--white);
@@ -437,17 +432,17 @@ textarea {
   margin-right: 4px;
 }
 @media (min-width: 768px) {
-  #hero #overlay section section button {
+  #hero #overlay section button {
     font-size: 1.4375rem;
     padding: 20px;
   }
 }
 @media (min-width: 768px) {
-  #hero #overlay section section button {
+  #hero #overlay section button {
     font-size: 1.5625rem;
     padding: 30px;
   }
 }
-#hero #overlay section section button i {
+#hero #overlay section button i {
   margin-left: 16px;
 }
