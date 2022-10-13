@@ -393,6 +393,61 @@ textarea {
 #hero {
   background-image: url("../img/hero1.jpg");
   background-size: cover;
-  background-position: center bottom;
-  height: 60vh;
+  background-position: center;
+  height: 80vh;
+}
+#hero #overlay {
+  background-color: rgba(var(--blackO), 0.65);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  #hero #overlay section {
+    display: flex;
+  }
+}
+#hero #overlay section section h1 {
+  color: var(--white);
+  font-family: "Gruppo", cursive;
+  font-weight: 400;
+  font-size: 1.875rem;
+}
+@media (min-width: 768px) {
+  #hero #overlay section section h1 {
+    font-size: 3.125rem;
+  }
+}
+@media (min-width: 1024px) {
+  #hero #overlay section section h1 {
+    font-size: 5.625rem;
+  }
+}
+#hero #overlay section section button {
+  border: none;
+  background-color: var(--red);
+  color: var(--white);
+  padding: 20px 15px;
+  font-size: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 24px;
+  cursor: pointer;
+  margin-right: 4px;
+}
+@media (min-width: 768px) {
+  #hero #overlay section section button {
+    font-size: 1.4375rem;
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #hero #overlay section section button {
+    font-size: 1.5625rem;
+    padding: 30px;
+  }
+}
+#hero #overlay section section button i {
+  margin-left: 16px;
 }
