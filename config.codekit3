@@ -47,15 +47,15 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/orange-hero.png" : {
-      "ft" : 32768,
-      "iS" : 2690069,
+    "\/deploy\/img\/orange-hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 433973,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/orange-hero.png",
+      "oAP" : "\/deploy\/img\/orange-hero.jpg",
       "oF" : 0,
-      "oIPL" : 1,
-      "opt" : 1,
-      "oT" : 1,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -104,6 +104,18 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/deploy\/styles.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/styles-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/dev\/content\/hero.html" : {
       "cB" : 0,
