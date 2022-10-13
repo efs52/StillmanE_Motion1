@@ -9,14 +9,6 @@
   ],
   "creatorBuild" : "34335",
   "files" : {
-    "\/.gitattributes" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/.gitattributes",
-      "oF" : 0
-    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -76,7 +68,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/scripts.html",
       "oF" : 0
     },
@@ -295,7 +287,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 669227926.75338697,
-    "displayValue" : "Elleah_Motion1",
+    "displayValue" : "StillmanE_Motion1",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-ucla",
     "iconImageWasSetByUser" : 0
