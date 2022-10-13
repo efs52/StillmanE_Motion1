@@ -2,10 +2,17 @@ import { gsap } from "gsap";
 
 gsap.set("form",{scaleX: 0, transformOrigin:"left center"});
 
-gsap.from("#line-1",{duration:1,x:-200,alpha:0});
-gsap.from("#line-2",{duration:1,x:-100,alpha:0,delay:0.5});
+function heroAnimation(){
+    var tl = gsap.timeline();
+    tl.from("#line-1",{duration:0.5,x:-200,alpha:0})
+        .from("#line-2",{duration:0.5,x:-100,alpha:0,delay:0.5},"-=0.25")
+        .from("#Get-started-btn",{duration:0.5,x:200,alpha:0,delay:1},"-=0.25");
+    return tl;
+}
 
-gsap.from("#Get-started-btn",{duration:1,x:200,alpha:0,delay:1});
+var mainTL= gsap.timeline();
+mainTL.add(heroAnimation());
+
 
 let ticketBtn = document.querySelector("aside");
 
