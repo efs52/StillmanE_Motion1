@@ -21,19 +21,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/hero.jpeg" : {
-      "ft" : 16384,
-      "iS" : 308409,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/hero.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/hero.jpg" : {
       "ft" : 16384,
       "iS" : 2111125,
@@ -53,6 +40,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/hero1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/img1.jpg" : {
+      "ft" : 16384,
+      "iS" : 2993314,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/img1.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

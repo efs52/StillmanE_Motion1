@@ -1,4 +1,7 @@
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.set("form",{scaleX: 0, transformOrigin:"left center"});
 
