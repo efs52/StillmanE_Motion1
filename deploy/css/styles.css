@@ -402,47 +402,74 @@ textarea {
   background-position: center;
   height: 80vh;
 }
-#hero #overlay {
-  background-color: rgba(var(--blackO), 0.65);
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 @media (min-width: 1024px) {
-  #hero #overlay section {
-    display: flex;
+  #hero {
+    height: 100vh;
   }
 }
-#hero #overlay section div h1 {
+#hero #bg {
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: center;
+}
+#hero #bg div #line-1 {
   color: var(--white);
   font-family: "DM Serif Display", serif;
   font-weight: 400;
-  font-size: 1.875rem;
+  font-size: 3.3125rem;
+  text-align: left;
+  padding-left: 1in;
+  padding-top: 0.7in;
+  line-height: 0.1pt;
+  letter-spacing: 0.3pt;
 }
 @media (min-width: 768px) {
-  #hero #overlay section div h1 {
+  #hero #bg div #line-1 {
     font-size: 3.125rem;
   }
 }
 @media (min-width: 1024px) {
-  #hero #overlay section div h1 {
-    font-size: 5.625rem;
+  #hero #bg div #line-1 {
+    font-size: 5rem;
+    padding-left: 2in;
+    line-height: 15pt;
+    padding-top: 90px;
+  }
+}
+#hero #bg div #line-2 {
+  color: var(--white);
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 3.3125rem;
+  text-align: left;
+  padding-left: 1in;
+  letter-spacing: 0.1pt;
+  line-height: 30pt;
+}
+@media (min-width: 768px) {
+  #hero #bg div #line-2 {
+    font-size: 3.125rem;
   }
 }
 @media (min-width: 1024px) {
-  #hero #overlay section aside {
-    display: flex;
-    align-items: center;
-    margin-left: 5vw;
+  #hero #bg div #line-2 {
+    font-size: 5rem;
+    padding-left: 2in;
+    padding-bottom: 0.5in;
+    line-height: 25pt;
   }
 }
-#hero #overlay section button {
+#hero #bg div #Get-started-btn {
+  display: flex;
+  margin-left: 1in;
   border: none;
-  background-color: var(--red);
-  color: var(--white);
-  padding: 20px 15px;
-  font-size: 1.25rem;
+  border-radius: 10px;
+  background-color: #1A5C40;
+  color: white;
+  padding: 15px 15px;
+  font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin-top: 24px;
@@ -450,22 +477,20 @@ textarea {
   margin-right: 4px;
 }
 @media (min-width: 768px) {
-  #hero #overlay section button {
+  #hero #bg div #Get-started-btn {
     font-size: 1.4375rem;
     padding: 20px;
   }
 }
-@media (min-width: 768px) {
-  #hero #overlay section button {
-    font-size: 1.5625rem;
-    padding: 30px;
+@media (min-width: 1024px) {
+  #hero #bg div #Get-started-btn {
+    font-size: 1.375rem;
+    padding: 20px 30px;
+    display: flex;
+    margin-left: 2in;
+    margin-top: 0.1in;
   }
 }
-#hero #overlay section button i {
+#hero #bg div #Get-started-btn i {
   margin-left: 16px;
-}
-#hero #overlay section form input {
-  border: none;
-  padding: 10px;
-  box-sizing: border-box;
 }
