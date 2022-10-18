@@ -31,8 +31,34 @@ function heroAnimation(){
     return tl;
 }
 
+// gsap.set("form",{scaleX: 0, transformOrigin:"left center"});
+
+// function heroAnimation(){
+//     var tl = gsap.timeline();
+//     tl.from("#line-1",{duration:0.5,x:-200,alpha:0})
+//         .from("#line-2",{duration:0.5,x:-100,alpha:0,delay:0.5},"-=0.25")
+//         .from("#Get-started-btn",{duration:0.5,x:200,alpha:0,delay:1},"-=0.25");
+//     return tl;
+// }
+
+
+// let GetStartedBtn = document.querySelector("aside");
+
+// GetStartedBtn.addEventListener("mouseover", function(){
+
+//     gsap.to("#Get-started-btn",{duration:0.25,backgroundColor:"#878787"});
+//     gsap.to("aside",{duration:0.25, x:-800});
+//     gsap.to("form",{duration:0.25,scaleX: 1});
+// })
+
+// GetStartedBtn.addEventListener("mouseout", function(){
+//     gsap.to("#Get-started-btn",{duration:0.25,backgroundColor:"#f91515"});
+//     gsap.to("aside",{duration:0.25,x:0});
+//     gsap.to("form",{duration:0.25,scaleX: 0});
+// })
+
 function aboutAnimation(){
-    var tl = gsap.timeline({scrollTrigger:{trigger:"#about", scrub:true,markers:false, end:"top 30%"}});
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#about", scrub:true, end:"top 30%"}});
     tl.from("#about aside div",{duration:1, scale:3, alpha:0},"startabout")
     .from("#about h1",{duration:1,x:"-=200%", alpha:0},"startabout")
     .from("#about p",{duration:1,x:"-=200%", alpha:0},"startabout")
@@ -40,7 +66,7 @@ function aboutAnimation(){
 }
 
 function wonderAnimation(){
-    var tl =gsap.timeline({scrollTrigger:{trigger:"#hero-2", scrub:true,markers:true, end:"top 40%", start:"top 80%"}});
+    var tl =gsap.timeline({scrollTrigger:{trigger:"#hero-2", scrub:true, end:"top 40%", start:"top 80%"}});
     tl.from("#bg-img",{duration:5, clipPath:"inset(0 50%)"})
     .from("#hero-2 h1",{duration:1, scale:3, alpha:0},"-=50%")
     return tl;
@@ -50,3 +76,15 @@ var mainTimeline = gsap.timeline();
 mainTimeline.add(heroAnimation())
     .add(aboutAnimation())
     .add(wonderAnimation());
+
+
+    
+
+
+
+
+
+
+
+
+    
