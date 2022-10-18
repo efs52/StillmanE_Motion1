@@ -60,6 +60,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/paperbagicon.png" : {
+      "ft" : 32768,
+      "iS" : 7676,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/paperbagicon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -85,6 +98,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/about.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/bag.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/bag.html",
       "oF" : 0
     },
     "\/dev\/content\/hero.kit" : {
@@ -314,6 +335,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_about.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_bag.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_bag.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
