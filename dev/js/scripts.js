@@ -3,6 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// Sets
 gsap.set("#hero h1 span",{alpha:0.25})
 
 var heroButtonTL = gsap.timeline({paused:true});
