@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 // Sets
-gsap.set("#hero h1",{alpha:0.25})
+gsap.set("#hero h1 span",{alpha:0.25})
 
 var heroButtonTL = gsap.timeline({paused:true});
     heroButtonTL.to("#Get-started-btn",{duration:0.25,scale:1.5, backgroundColor:"#A1BD7E"},"trigger")  

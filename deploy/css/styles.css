@@ -495,6 +495,13 @@ textarea {
   margin-left: 16px;
 }
 
+.icon {
+  background-image: url("../img/paperbagicon.jpg");
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
 #about {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -616,11 +623,4 @@ textarea {
   width: 100%;
   position: absolute;
   z-index: -1;
-}
-
-.icon {
-  background: url("paperbagicon.jpg");
-  height: 20px;
-  width: 20px;
-  display: block;
 }
