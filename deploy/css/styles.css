@@ -495,8 +495,12 @@ textarea {
   margin-left: 16px;
 }
 
-#bag #citrus-icon {
-  width: 500;
+#bag > div #grocery-bag {
+  width: max-content;
+  position: absolute;
+}
+#bag > div #groceries {
+  width: fit-content;
 }
 
 #about {

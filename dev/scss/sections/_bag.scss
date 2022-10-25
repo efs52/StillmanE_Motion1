@@ -1,7 +1,17 @@
 #bag{
 
-    #citrus-icon{
-        width: 500;
+    >div{
+
+        #grocery-bag{
+            width: max-content;
+            position: absolute;
+        }
+    
+        #groceries{
+            width: fit-content;
+    
+        }
+
     }
 
 }
