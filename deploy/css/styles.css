@@ -495,14 +495,6 @@ textarea {
   margin-left: 16px;
 }
 
-#bag > div #grocery-bag {
-  width: max-content;
-  position: absolute;
-}
-#bag > div #groceries {
-  width: fit-content;
-}
-
 #about {
   display: grid;
   grid-template-columns: 16px auto 16px;

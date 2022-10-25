@@ -1,7 +1,10 @@
 import { gsap } from "gsap";
+// import {SplitText} from "gsap-trial/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(SplitText);
+
 
 // Sets
 gsap.set("#hero h1 span",{alpha:0.25})
@@ -31,6 +34,15 @@ function heroAnimation(){
     .from("#Get-started-btn i",{duration:0.5,rotation:90, alpha:0, transformOrigin: "left bottom"},"-=0.5");
     return tl;
 }
+
+// let mySplitText = new SplitText('.split', {type:'chars'});
+// let chars = mySplitText.chars;
+
+// gsap.from(chars,{
+//     yPercent: 130,
+//     stagger: 0.02,
+
+// })
 
 // gsap.set("form",{scaleX: 0, transformOrigin:"left center"});
 
