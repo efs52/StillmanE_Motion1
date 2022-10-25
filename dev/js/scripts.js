@@ -1,10 +1,7 @@
 import { gsap } from "gsap";
-// import {SplitText} from "gsap-trial/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-// gsap.registerPlugin(SplitText);
-
 
 // Sets
 gsap.set("#hero h1 span",{alpha:0.25})
@@ -35,15 +32,6 @@ function heroAnimation(){
     return tl;
 }
 
-// let mySplitText = new SplitText('.split', {type:'chars'});
-// let chars = mySplitText.chars;
-
-// gsap.from(chars,{
-//     yPercent: 130,
-//     stagger: 0.02,
-
-// })
-
 // gsap.set("form",{scaleX: 0, transformOrigin:"left center"});
 
 // function heroAnimation(){
@@ -70,6 +58,7 @@ function heroAnimation(){
 //     gsap.to("form",{duration:0.25,scaleX: 0});
 // })
 
+
 function aboutAnimation(){
     var tl = gsap.timeline({scrollTrigger:{trigger:"#about", scrub:true, end:"top 30%"}});
     tl.from("#about aside div",{duration:1, scale:3, alpha:0},"startabout")
@@ -77,59 +66,6 @@ function aboutAnimation(){
     .from("#about p",{duration:1,x:"-=200%", alpha:0},"startabout")
     return tl;
 }
-
-
-
-
-
-
-
-// console.clear();
-
-// gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin);
-// gsap.defaults({ease: "none"});
-
-
-
-// const pulses = gsap.timeline({
-//   defaults: {
-//     duration: 0.05, 
-//     autoAlpha: 1, 
-//     scale: 2, 
-//     transformOrigin: 'center', 
-//     ease: "elastic(2.5, 1)"
-//   }})
-// .to(".ball02, .text01", {}, 0.2) 
-// .to(".ball03, .text02", {}, 0.33)
-// .to(".ball04, .text03", {}, 0.46)
-
-// const main = gsap.timeline({defaults: {duration: 1},
-//   scrollTrigger: {
-//     trigger: "#svg",
-//     scrub: true,
-//     start: "top center",
-//     end: "bottom center"
-//   }})
-// .to(".ball01", {duration: 0.01, autoAlpha: 1})
-// .from(".theLine", {drawSVG: 0}, 0)
-// .to(".ball01", {motionPath: {
-//   path: ".theLine", 
-//   align:".theLine",
-//   alignOrigin: [0.5, 0.5],
-// }}, 0)
-// .add(pulses, 0);
-
-
-
-
-
-
-
-
-
-
-
-
 
 function wonderAnimation(){
     var tl =gsap.timeline({scrollTrigger:{trigger:"#hero-2", scrub:true, end:"top 40%", start:"top 80%"}});
