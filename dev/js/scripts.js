@@ -2,44 +2,31 @@ import { gsap } from "gsap";
 
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { SplitText } from "gsap/SplitText";
-
-gsap.registerPlugin(ScrollTrigger);
-
-// gsap.registerPlugin(ScrollTrigger, SplitText);
-
-
-// let mySplitText = new SplitText(".split", {type: "chars"})
-// let chars = mySplitText.chars;
-
-// gsap.from(chars, {
-//     yPercent: 130,
-//     stagger: 0.05,
-//     ease: "back.out",
-//     duration: 1,
-//     scrollTrigger: {
-//         trigger: '.split',
-//         start: "top 80%",
-//         markers: true
-
-//     }
-// });
+import { SplitText } from "gsap/SplitText";
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 
 
+let mySplitText = new SplitText(".split", {type: "chars"})
+let chars = mySplitText.chars;
 
+gsap.from(chars, {
+    yPercent: 130,
+    stagger: 0.05,
+    ease: "back.out",
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.split',
+        start: "top 80%",
+        markers: true
 
+    }
+});
 
-
-
-
-
-
-
-
-
-
-
+function bannerAnimation(){
+    var tl = gsap.timeline();
+    tl.to("#container",{duration: 1, fill:"red",x:300});
+}
 
 
 
@@ -116,6 +103,7 @@ function wonderAnimation(){
 
 var mainTimeline = gsap.timeline();
 mainTimeline.add(heroAnimation())
+    .add(bannerAnimation())
     .add(aboutAnimation())
     .add(wonderAnimation());
 
