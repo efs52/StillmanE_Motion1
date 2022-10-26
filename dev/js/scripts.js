@@ -1,7 +1,47 @@
 import { gsap } from "gsap";
+
+
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { SplitText } from "gsap/SplitText";
 
 gsap.registerPlugin(ScrollTrigger);
+
+// gsap.registerPlugin(ScrollTrigger, SplitText);
+
+
+// let mySplitText = new SplitText(".split", {type: "chars"})
+// let chars = mySplitText.chars;
+
+// gsap.from(chars, {
+//     yPercent: 130,
+//     stagger: 0.05,
+//     ease: "back.out",
+//     duration: 1,
+//     scrollTrigger: {
+//         trigger: '.split',
+//         start: "top 80%",
+//         markers: true
+
+//     }
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Sets
 gsap.set("#hero h1 span",{alpha:0.25})

@@ -21,6 +21,16 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/food.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/food.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/hero.jpg" : {
       "ft" : 16384,
       "iS" : 2111125,
@@ -73,6 +83,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/paper_bag.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/paper_bag.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -100,6 +120,14 @@
       "oAP" : "\/dev\/content\/about.html",
       "oF" : 0
     },
+    "\/dev\/content\/banner.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/banner.html",
+      "oF" : 0
+    },
     "\/dev\/content\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -114,14 +142,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/hero2.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/market_timeline.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/market_timeline.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -340,6 +360,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_banner.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_banner.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/sections\/_hero.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -370,21 +405,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_market_timeline.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_market_timeline.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -399,6 +419,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/gsap-bonus.tgz" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gsap-bonus.tgz",
+      "oF" : 0
     },
     "\/node_modules" : {
       "ft" : 65536,
