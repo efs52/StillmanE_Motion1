@@ -9,22 +9,11 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 let mySplitText = new SplitText(".split", {type: "chars"});
 let chars = mySplitText.chars;
 
-gsap.from(chars, {
-    yPercent: 130,
-    stagger: 0.05,
-    ease: "back.out",
-    duration: 1,
-    scrollTrigger: {
-        trigger: '.split',
-        start: "top 80%",
-        markers: true
-
-    }
-});
 
 function bannerAnimation(){
-    var tl = gsap.timeline();
-    tl.to("#container",{duration: 1, fill:"red",x:300});
+    var tl = gsap.timeline({scrollTrigger:{trigger:".split", scrub: true, markers: true, start: "top 80%"}});
+    tl.from(chars,{yPercent: 130, stagger: 0.05, duration: 1, ease: "back.out"})
+    return tl;
 }
 
 
@@ -104,49 +93,47 @@ function wonderAnimation(){
 
 
 
-function animateFrom(elem, direction) {
-  direction = direction || 1;
-  var x = 0,
-      y = direction * 100;
-  if(elem.classList.contains("gs_reveal_fromLeft")) {
-    x = -100;
-    y = 0;
-  } else if (elem.classList.contains("gs_reveal_fromRight")) {
-    x = 100;
-    y = 0;
-  }
-  elem.style.transform = "translate(" + x + "px, " + y + "px)";
-  elem.style.opacity = "0";
-  gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
-    duration: 1.25, 
-    x: 0,
-    y: 0, 
-    autoAlpha: 1, 
-    ease: "expo", 
-    overwrite: "auto"
-  });
-}
+// function animateFrom(elem, direction) {
+//   direction = direction || 1;
+//   var x = 0,
+//       y = direction * 100;
+//   if(elem.classList.contains("gs_reveal_fromLeft")) {
+//     x = -100;
+//     y = 0;
+//   } else if (elem.classList.contains("gs_reveal_fromRight")) {
+//     x = 100;
+//     y = 0;
+//   }
+//   elem.style.transform = "translate(" + x + "px, " + y + "px)";
+//   elem.style.opacity = "0";
+//   gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
+//     duration: 1.25, 
+//     x: 0,
+//     y: 0, 
+//     autoAlpha: 1, 
+//     ease: "expo", 
+//     overwrite: "auto"
+//   });
+// }
 
-function hide(elem) {
-  gsap.set(elem, {autoAlpha: 0});
-}
+// function hide(elem) {
+//   gsap.set(elem, {autoAlpha: 0});
+// }
 
-document.addEventListener("DOMContentLoaded", function() {
-  gsap.registerPlugin(ScrollTrigger);
+// document.addEventListener("DOMContentLoaded", function() {
+//   gsap.registerPlugin(ScrollTrigger);
   
-  gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
-    hide(elem); // assure that the element is hidden when scrolled into view
+//   gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
+//     hide(elem); // assure that the element is hidden when scrolled into view
     
-    ScrollTrigger.create({
-      trigger: elem,
-      onEnter: function() { animateFrom(elem) }, 
-      onEnterBack: function() { animateFrom(elem, -1) },
-      onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
-    });
-  });
-});
-
-
+//     ScrollTrigger.create({
+//       trigger: elem,
+//       onEnter: function() { animateFrom(elem) }, 
+//       onEnterBack: function() { animateFrom(elem, -1) },
+//       onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+//     });
+//   });
+// });
 
 
 
