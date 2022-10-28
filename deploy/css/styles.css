@@ -495,6 +495,38 @@ textarea {
   margin-left: 16px;
 }
 
+#grocery-container {
+  display: flex;
+  align-items: center;
+  grid-template-areas: ". grocery-container .";
+  padding-top: 28%;
+  padding-bottom: 20%;
+  justify-content: center;
+}
+#grocery-container #box {
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+#grocery-container #svg-1 {
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+}
+#grocery-container #svg-2 {
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
+#banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   overflow: hidden;
   border: solid 2px #1A5C40;
@@ -504,9 +536,11 @@ textarea {
 .split {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 6.25rem;
   text-align: center;
   color: #1A5C40;
+  margin: 0;
+  line-height: 0;
 }
 
 #about {

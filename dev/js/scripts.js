@@ -2,19 +2,21 @@ import { gsap } from "gsap";
 
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap/SplitText";
-gsap.registerPlugin(ScrollTrigger, SplitText);
+import { GSDevTools } from "gsap/GSDevTools";
+// import { SplitText } from "gsap/SplitText";
+gsap.registerPlugin(ScrollTrigger);
 
 
-let mySplitText = new SplitText(".split", {type: "chars"});
-let chars = mySplitText.chars;
+
+// let mySplitText = new SplitText(".split", {type: "chars"});
+// let chars = mySplitText.chars;
 
 
-function bannerAnimation(){
-    var tl = gsap.timeline({scrollTrigger:{trigger:".split", scrub: true, markers: true, start: "top 80%"}});
-    tl.from(chars,{yPercent: 130, stagger: 0.05, duration: 1, ease: "back.out"})
-    return tl;
-}
+// function bannerAnimation(){
+//     var tl = gsap.timeline({scrollTrigger:{trigger:".split", scrub: true, markers: true, start: "top 80%"}});
+//     tl.from(chars,{yPercent: 130, stagger: 0.05, duration: 1, ease: "back.out"})
+//     return tl;
+// }
 
 
 
@@ -72,6 +74,33 @@ function heroAnimation(){
 //     gsap.to("aside",{duration:0.25,x:0});
 //     gsap.to("form",{duration:0.25,scaleX: 0});
 // })
+
+
+// function groceryAnimation(){
+//     var tl = gsap.timeline({scrollTrigger:{trigger:"#groceries", scrub: true, end:"top 30%"}})
+//     tl.from("#groceries", {duration:1})
+//     return tl;
+
+// }
+
+// function groceryAnimation(){
+//     var tl = gsap.timeline({ScrollTrigger: {trigger:"#groceries", scrub: true, end:"top 30%"}});
+//     tl.from("#svg-1", {duration:1, y:-80})
+//     tl.from("#svg-1", {duration:1, zIndex:5})
+//     return tl;
+// }
+
+function groceryAnimation(){
+    var tl = gsap.timeline({scrollTrigger:{trigger:".food", start: "top 30%", end:"bottom 60%", scrub:2}});
+    tl.from('.food', {yPercent: -120, duration: 5 })
+
+    return tl;
+    
+}
+
+// gsap.to('.food', {yPercent: -100, ease: "none", scrollTrigger: {trigger: ".food", start: "top center", end: "bottom top", scrub: true}})
+
+
 
 
 function aboutAnimation(){
@@ -140,9 +169,13 @@ function wonderAnimation(){
 
 var mainTimeline = gsap.timeline();
 mainTimeline.add(heroAnimation())
-    .add(bannerAnimation())
+    .add(groceryAnimation())
     .add(aboutAnimation())
     .add(wonderAnimation());
+
+
+
+    GSDevTools.create();
 
 
     

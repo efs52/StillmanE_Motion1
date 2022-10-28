@@ -1,0 +1,32 @@
+#grocery-container{
+    display: flex;
+    align-items: center;
+    grid-template-areas: ". grocery-container .";
+    padding-top: 28%;
+    padding-bottom: 20%;
+    justify-content: center;
+    
+    
+
+    #box{
+        justify-content: center;
+        position: relative;
+        align-items: center;
+    }
+
+    #svg-1{
+        justify-content: center;
+        position: absolute;
+        align-items: center;
+        
+    }
+
+    #svg-2{
+        justify-content: center;
+        position: absolute;
+        align-items: center;
+        padding-bottom: 10%;
+
+    }
+
+}
