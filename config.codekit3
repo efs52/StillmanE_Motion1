@@ -78,36 +78,12 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/drawSVG.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/drawSVG.html",
-      "oF" : 0
-    },
     "\/dev\/content\/drawSVG.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/drawSVG.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/geo.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/geo.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/geo.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/geo.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
