@@ -17,6 +17,16 @@
       "oAP" : "\/assets\/DrawSVG.fig",
       "oF" : 0
     },
+    "\/assets\/leaf 1.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/leaf 1.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/line-animation.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -32,6 +42,26 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/assets\/pattern-animation.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/pattern.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/pattern.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/preloader.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/preloader.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
