@@ -1,0 +1,8 @@
+<svg width="405" height="248" viewBox="0 0 405 248" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="cube">
+<path id="line4" d="M125.84 69.56L167.66 29.32L302.12 28.56L303.12 166.69L263.97 207.27H125.84V69.56Z" stroke="#3142BC" stroke-miterlimit="10"/>
+<path id="line3" d="M167.66 29.32L166.86 165.69L303.12 166.69L263.97 206.97L263.25 70.14H125.84" stroke="#3142BC" stroke-miterlimit="10"/>
+<path id="line2" d="M125.84 208.26V70.14H263.25L301.76 29.32L303.12 166.69L166.86 165.69" stroke="#3142BC" stroke-miterlimit="10"/>
+<path id="line1" d="M263.25 70.14L263.97 207.27L126.84 207.26L166.86 165.69L167.66 29.32L302.11 28.57" stroke="#3142BC" stroke-miterlimit="10"/>
+</g>
+</svg>

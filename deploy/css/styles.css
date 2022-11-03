@@ -373,6 +373,12 @@ textarea {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
 }
+#drawSVG-container #lg-circle {
+  stroke-dasharray: 10;
+}
+#drawSVG-container #sm-circle {
+  stroke-dasharray: 10;
+}
 #drawSVG-container .drawSVG {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

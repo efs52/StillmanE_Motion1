@@ -4,6 +4,15 @@
     grid-template-rows: repeat(3, 1fr);
 
 
+    #lg-circle{
+        stroke-dasharray: 10;
+    }
+
+    #sm-circle{
+        stroke-dasharray: 10;
+    }
+
+
 
 
     .drawSVG{
@@ -26,8 +35,11 @@
             svg{
                 width: 100%;
             }
+        
         }
     }
+
+
 
     .grow-right{
         // display: none;
