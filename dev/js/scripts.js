@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { GSDevTools } from "gsap/GSDevTools";
+// import { GSDevTools } from "gsap/GSDevTools";
 // import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -90,33 +90,33 @@ function heroAnimation(){
 //     return tl;
 // }
 
-function groceryAnimation(){
-    var tl = gsap.timeline({scrollTrigger:{trigger:".food", start: "top 30%", end:"bottom 60%", scrub:2}});
-    tl.from('.food', {yPercent: -120, duration: 5 })
+// function groceryAnimation(){
+//     var tl = gsap.timeline({scrollTrigger:{trigger:".food", start: "top 30%", end:"bottom 60%", scrub:2}});
+//     tl.from('.food', {yPercent: -120, duration: 5 })
 
-    return tl;
+//     return tl;
     
-}
+// }
 
 // gsap.to('.food', {yPercent: -100, ease: "none", scrollTrigger: {trigger: ".food", start: "top center", end: "bottom top", scrub: true}})
 
 
 
 
-function aboutAnimation(){
-    var tl = gsap.timeline({scrollTrigger:{trigger:"#about", scrub:true, end:"top 30%"}});
-    tl.from("#about aside div",{duration:1, scale:3, alpha:0},"startabout")
-    .from("#about h1",{duration:1,x:"-=200%", alpha:0},"startabout")
-    .from("#about p",{duration:1,x:"-=200%", alpha:0},"startabout")
-    return tl;
-}
+// function aboutAnimation(){
+//     var tl = gsap.timeline({scrollTrigger:{trigger:"#about", scrub:true, end:"top 30%"}});
+//     tl.from("#about aside div",{duration:1, scale:3, alpha:0},"startabout")
+//     .from("#about h1",{duration:1,x:"-=200%", alpha:0},"startabout")
+//     .from("#about p",{duration:1,x:"-=200%", alpha:0},"startabout")
+//     return tl;
+// }
 
-function wonderAnimation(){
-    var tl =gsap.timeline({scrollTrigger:{trigger:"#hero-2", scrub:true, end:"top 40%", start:"top 80%"}});
-    tl.from("#bg-img",{duration:5, clipPath:"inset(0 50%)"})
-    .from("#hero-2 h1",{duration:1, scale:3, alpha:0},"-=50%")
-    return tl;
-}
+// function wonderAnimation(){
+//     var tl =gsap.timeline({scrollTrigger:{trigger:"#hero-2", scrub:true, end:"top 40%", start:"top 80%"}});
+//     tl.from("#bg-img",{duration:5, clipPath:"inset(0 50%)"})
+//     .from("#hero-2 h1",{duration:1, scale:3, alpha:0},"-=50%")
+//     return tl;
+// }
 
 
 
@@ -168,14 +168,11 @@ function wonderAnimation(){
 
 
 var mainTimeline = gsap.timeline();
-mainTimeline.add(heroAnimation())
-    .add(groceryAnimation())
-    .add(aboutAnimation())
-    .add(wonderAnimation());
+mainTimeline.add(heroAnimation());
 
 
 
-    GSDevTools.create();
+//     GSDevTools.create();
 
 
     
