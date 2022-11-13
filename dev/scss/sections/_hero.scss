@@ -34,6 +34,7 @@
                     padding-top: 0.7in;
                     line-height: 0.1pt;
                     letter-spacing: 0.3pt;
+                    opacity: 1;
 
                     @include md {
                         font-size: rem-calc(50);
@@ -56,6 +57,7 @@
                     padding-left: 1in;
                     letter-spacing: 0.1pt;
                     line-height: 30pt;
+                    opacity: 1;
 
                     @include md {
                         font-size: rem-calc(50);
