@@ -360,6 +360,9 @@ textarea {
 /* =============
     Footer
 ============= */
-#vori1 {
+#vori1 body {
   background-color: black;
+}
+#vori1 body h1 {
+  color: white;
 }
