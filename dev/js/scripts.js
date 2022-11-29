@@ -16,28 +16,54 @@ import { GSDevTools } from "gsap/GSDevTools";
 //   .to(".class2", {rotation: -360, duration: 1, ease: "elastic"})
 //   .to(".class3", {rotation: -180, duration: 1, ease: "elastic"});
 
+function FadeAnimation(){
+  var tl = gsap.timeline();
+      tl.to("#dot1", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .to("#dot2", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .to("#dot3", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .to("#dot4", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .to("#dot5", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .to("#dot6", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .to("#dot7", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .to("#dot8", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .to("#dot9", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .to("#dot10", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .to("#dot11", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .to("#dot12", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .to("#dot13", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .to("#dot14", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .to("#dot15", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .to("#dot16", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .to("#dot17", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .to("#dot18", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .to("#dot19", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .to("#dot20", 2.3, {autoAlpha: 1}, {autoAlpha: 0});
+}
 
-var tl = gsap.timeline({ duration: 0.5, ease: 'none', opacity: 0 });
-tl.to("#dot1", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-  .to("#dot2", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-  .to("#dot3", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-  .to("#dot4", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-  .to("#dot5", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-  .to("#dot6", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-  .to("#dot7", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-  .to("#dot8", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-  .to("#dot9", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-  .to("#dot10", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-  .to("#dot11", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-  .to("#dot12", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-  .to("#dot13", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-  .to("#dot14", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-  .to("#dot15", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-  .to("#dot16", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-  .to("#dot17", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-  .to("#dot18", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-  .to("#dot19", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-  .to("#dot20", 2.3, {autoAlpha: 1}, {autoAlpha: 0});
+
+
+
+
+  // function FadeAnimation(){}
+  //   var tl = gsap.timeline();
+  //   tl.from("#about aside div",{duration:1, scale:3, alpha:0},"startabout")
+  //   .from("#about h1",{duration:1,x:"-=200%", alpha:0},"startabout")
+  //   .from("#about p",{duration:1,x:"-=200%", alpha:0},"startabout")
+  //   return tl;
+
+  //   function FadeAnimation(){
+  //     var tl = gsap.timeline();
+  //     var background_dots = document.querySelector("#background_dots");
+  //    tl.to(background_dots, {opacity:0, duration:3});
+  //    tl.to(background_dots, {opacity:100, duration:3, delay:1});
+  //  }
+
+   var mainTimeline = gsap.timeline();
+mainTimeline.add(FadeAnimation());
+    // .add(groceryAnimation())
+    // .add(aboutAnimation())
+    // .add(wonderAnimation());
+
 
 
     // .from('#line-1', { y: 100 }, '-=0.2')
