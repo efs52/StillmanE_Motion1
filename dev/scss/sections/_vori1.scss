@@ -1,15 +1,13 @@
-#vori1{
+#logo{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". logo .";
 
-    body{
-        background-color: black;
+    @include lg{
+        grid-template-columns: auto 1200px auto;
+    }
 
-        h1{
-            color: white;
-        }
-
-        #background_dots{
-            height: 5px;
-
-        }
-    } 
+    >div{
+        grid-area: logo;
+    }
 }

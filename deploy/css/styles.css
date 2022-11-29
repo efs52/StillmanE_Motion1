@@ -327,6 +327,10 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: black;
+}
+
 /* =============
     Typography
 ============= */
@@ -360,12 +364,16 @@ textarea {
 /* =============
     Footer
 ============= */
-#vori1 body {
-  background-color: black;
+#logo {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". logo .";
 }
-#vori1 body h1 {
-  color: white;
+@media (min-width: 1024px) {
+  #logo {
+    grid-template-columns: auto 1200px auto;
+  }
 }
-#vori1 body #background_dots {
-  height: 5px;
+#logo > div {
+  grid-area: logo;
 }
