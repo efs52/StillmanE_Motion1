@@ -17,27 +17,34 @@ import { GSDevTools } from "gsap/GSDevTools";
 //   .to(".class3", {rotation: -180, duration: 1, ease: "elastic"});
 
 function FadeAnimation(){
-  var tl = gsap.timeline();
-      tl.from("#dot1", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .from("#dot2", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .from("#dot3", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .from("#dot4", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .from("#dot5", 2.3, {autoAlpha: 0}, {autoAlpha: 1}) 
-        .from("#dot6", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .from("#dot7", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .from("#dot8", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .from("#dot9", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .from("#dot10", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .from("#dot11", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .from("#dot12", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .from("#dot13", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .from("#dot14", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .from("#dot15", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .from("#dot16", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .from("#dot17", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .from("#dot18", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .from("#dot19", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .from("#dot20", 2.3, {autoAlpha: 1}, {autoAlpha: 0});
+  var tl = gsap.timeline({duration:3})
+      tl.from("#dot1", {opacity: 0}, "appear")
+        .from("#dot3", {opacity:0},"appear1")
+        .from("#dot19", {opacity:0},"appear1")
+
+        .from("#dot12", {opacity:0},"appear2")
+
+        .from("#dot9", {opacity:0},"appear3")
+        .from("#dot10", {opacity:0},"appear3")
+        .from("#dot17", {opacity:0},"appear3")
+        .from("#dot18", {opacity:0},"appear3")
+        .from("#dot19", {opacity:0},"appear3")
+
+        .from("#dot4", {opacity:0},"appear4")
+        .from("#dot7", {opacity:0},"appear4")
+        .from("#dot13", {opacity:0},"appear4")
+        .from("#dot14", {opacity:0},"appear4")
+        .from("#dot15", {opacity:0},"appear4")
+
+        .from("#dot2", {opacity:0},"appear5")
+        .from("#dot8", {opacity:0})
+
+        .from("#dot5", {opacity:0},"appear6")
+        .from("#dot16", {opacity:0},"appear6")
+        
+        .from("#dot6", {opacity:0},"appear7")
+        .from("#dot11", {opacity:0},"appear7")
+        return tl;
 }
 
 
