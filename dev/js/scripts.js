@@ -3,6 +3,13 @@ import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(GSDevTools);
 
+
+// timeline3
+// .set(dots3, {css:{'fill-opacity': 0}})
+// .staggerTo(dots3, 1, {css:{x: '+=300', 'fill-opacity': 0.2}}, 0.2)
+// .staggerTo(dots3, 1, {css:{x: '-=300', 'fill-opacity': 1.0}}, 0.2); 
+
+
 function FadeAnimation(){
   var tl = gsap.timeline({duration:2})
       tl.from("#dot1", {opacity: 0}, "appear")
@@ -34,7 +41,7 @@ function FadeAnimation(){
 
         .from("#dot2", {opacity:0},"appear6")
 
-        .from("#dot10", {opacity:0},"disappear3")
+        
         .from("#dot18", {opacity:0},"disappear3")
 
         .from("#dot9", {opacity:0},"disappear4")
@@ -53,6 +60,8 @@ function FadeAnimation(){
         .from("#dot6", {opacity:0},"appear8")
         .from("#dot11", {opacity:0},"appear8")
         .from("#dot16", {opacity:0},"appear8")
+
+        .to("#dot10", {duration: 0.5, fill:"white"})
 
         // .from("#dot9", {opacity:0},"appear3")
         // .from("#dot10", {opacity:0},"appear4")
