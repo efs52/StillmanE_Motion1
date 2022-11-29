@@ -18,26 +18,26 @@ import { GSDevTools } from "gsap/GSDevTools";
 
 function FadeAnimation(){
   var tl = gsap.timeline();
-      tl.to("#dot1", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .to("#dot2", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .to("#dot3", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .to("#dot4", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .to("#dot5", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .to("#dot6", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .to("#dot7", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .to("#dot8", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .to("#dot9", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .to("#dot10", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .to("#dot11", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .to("#dot12", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .to("#dot13", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .to("#dot14", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .to("#dot15", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .to("#dot16", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .to("#dot17", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .to("#dot18", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
-        .to("#dot19", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
-        .to("#dot20", 2.3, {autoAlpha: 1}, {autoAlpha: 0});
+      tl.from("#dot1", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .from("#dot2", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .from("#dot3", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .from("#dot4", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .from("#dot5", 2.3, {autoAlpha: 0}, {autoAlpha: 1}) 
+        .from("#dot6", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .from("#dot7", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .from("#dot8", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .from("#dot9", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .from("#dot10", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .from("#dot11", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .from("#dot12", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .from("#dot13", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .from("#dot14", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .from("#dot15", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .from("#dot16", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .from("#dot17", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .from("#dot18", 2.3, {autoAlpha: 1}, {autoAlpha: 0})
+        .from("#dot19", 2.3, {autoAlpha: 0}, {autoAlpha: 1})
+        .from("#dot20", 2.3, {autoAlpha: 1}, {autoAlpha: 0});
 }
 
 
@@ -59,7 +59,7 @@ function FadeAnimation(){
   //  }
 
    var mainTimeline = gsap.timeline();
-mainTimeline.add(FadeAnimation());
+  mainTimeline.add(FadeAnimation());
     // .add(groceryAnimation())
     // .add(aboutAnimation())
     // .add(wonderAnimation());
