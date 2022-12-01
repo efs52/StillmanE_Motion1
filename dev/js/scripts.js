@@ -17,49 +17,49 @@ function FadeAnimation(){
         .from("#dot3", {opacity:0},"appear1")
         .from("#dot19", {opacity:0},"appear1")
 
-        .from("#dot1", {attr:{"fill-opacity":.5}})
+        .from("#dot1", {fillOpacity:0.25},"appear2")
 
-        .from("#dot12", {opacity:0},"appear2")
+        .from("#dot12", {opacity:0},"appear3")
 
-        .from("#dot10", {opacity:0},"appear3")
-        .from("#dot18", {opacity:0},"appear3")
+        .from("#dot10", {opacity:0},"appear4")
+        .from("#dot18", {opacity:0},"appear4")
 
-        .from("#dot9", {opacity:0},"appear4")
-        .from("#dot17", {opacity:0},"appear4")
+        .from("#dot9", {opacity:0},"appear5")
+        .from("#dot17", {opacity:0},"appear5")
 
-        .from("#dot4", {opacity:0},"appear5")
-        .from("#dot15", {opacity:0},"appear5")
+        .from("#dot4", {opacity:0},"appear6")
+        .from("#dot15", {opacity:0},"appear6")
 
-        .from("#dot3", {opacity:0},"disappear1")
-        .from("#dot19", {opacity:0},"disappear1")
+        .from("#dot3", {fillOpacity:0.25},"appear7")
+        .from("#dot19", {fillOpacity:0.25},"appear7")
 
-        .from("#dot7", {opacity:0},"appear5")
-        .from("#dot13", {opacity:0},"appear5")
-        .from("#dot14", {opacity:0},"appear5")
+        .from("#dot7", {opacity:0},"appear8")
+        .from("#dot13", {opacity:0},"appear8")
+        .from("#dot14", {opacity:0},"appear8")
 
-        .from("#dot12", {opacity:0},"disappear2")
+        .from("#dot12", {fillOpacity:0.25},"appear9")
 
-        .from("#dot2", {opacity:0},"appear6")
+        .from("#dot2", {opacity:0},"appear10")
 
         
-        .from("#dot18", {opacity:0},"disappear3")
+        .from("#dot18", {fillOpacity:0.25},"appear11")
 
-        .from("#dot9", {opacity:0},"disappear4")
-        .from("#dot17", {opacity:0},"disappear4")
+        .from("#dot9", {fillOpacity:0.25},"appear12")
+        .from("#dot17", {fillOpacity:0.25},"appear13")
 
-        .from("#dot4", {opacity:0},"disappear5")
-        .from("#dot15", {opacity:0},"disappear5")
+        .from("#dot4", {fillOpacity:0.25},"appear14")
+        .from("#dot15", {fillOpacity:0.25},"appear15")
 
-        .from("#dot7", {opacity:0},"disappear6")
-        .from("#dot13", {opacity:0},"disappear6")
-        .from("#dot14", {opacity:0},"disappear6")
+        .from("#dot7", {fillOpacity:0.25},"appear16")
+        .from("#dot13", {fillOpacity:0.25},"appear17")
+        .from("#dot14", {fillOpacity:0.25},"appear18")
 
-        .from("#dot2", {opacity:0},"disappear7")
+        .from("#dot2", {fillOpacity:0.25},"appear19")
 
-        .from("#dot5", {opacity:0},"appear8")
-        .from("#dot6", {opacity:0},"appear8")
-        .from("#dot11", {opacity:0},"appear8")
-        .from("#dot16", {opacity:0},"appear8")
+        .from("#dot5", {visibility:"hidden"})
+        .from("#dot6", {visibility:"hidden"})
+        .from("#dot11", {visibility:"hidden"})
+        .from("#dot16", {visibility:"hidden"})
 
         .to("#dot10", {duration: 0.5, fill:"white"})
 
