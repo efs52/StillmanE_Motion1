@@ -10,86 +10,85 @@ gsap.registerPlugin(GSDevTools);
 // .staggerTo(dots3, 1, {css:{x: '-=300', 'fill-opacity': 1.0}}, 0.2); 
 
 
-function FadeAnimation(){
+function DotsFadein(){
   var tl = gsap.timeline({duration:2})
-      tl.from("#dot1", {opacity: 0}, "appear")
+      tl.from("#dot1", {alpha:0})
 
-        .from("#dot3", {opacity:0},"appear1")
-        .from("#dot19", {opacity:0},"appear1")
+        .from("#dot3", {alpha:0})
+        .from("#dot19", {alpha:0})
 
-        .from("#dot1", {fillOpacity:0.25},"appear2")
+        .to("#dot1", {alpha:0.5, duration:1})
 
-        .from("#dot12", {opacity:0},"appear3")
+        .from("#dot12", {alpha:0})
 
-        .from("#dot10", {opacity:0},"appear4")
-        .from("#dot18", {opacity:0},"appear4")
+        .from("#dot10", {alpha:0})
+        .from("#dot18", {alpha:0})
 
-        .from("#dot9", {opacity:0},"appear5")
-        .from("#dot17", {opacity:0},"appear5")
+        .from("#dot9", {alpha:0})
+        .from("#dot17", {alpha:0})
 
-        .from("#dot4", {opacity:0},"appear6")
-        .from("#dot15", {opacity:0},"appear6")
+        .from("#dot4", {alpha:0})
+        .from("#dot15", {alpha:0})
 
-        .from("#dot3", {fillOpacity:0.25},"appear7")
-        .from("#dot19", {fillOpacity:0.25},"appear7")
+        .to("#dot3", {alpha:0.5})
+        .to("#dot19", {alpha:0.5})
 
-        .from("#dot7", {opacity:0},"appear8")
-        .from("#dot13", {opacity:0},"appear8")
-        .from("#dot14", {opacity:0},"appear8")
+        .from("#dot7", {alpha:0})
+        .from("#dot13", {alpha:0})
+        .from("#dot14", {alpha:0})
 
-        .from("#dot12", {fillOpacity:0.25},"appear9")
+        .from("#dot2", {alpha:0})
 
-        .from("#dot2", {opacity:0},"appear10")
+        // .to("#dot10", {duration: 0.5, fill:"white"})
 
-        
-        .from("#dot18", {fillOpacity:0.25},"appear11")
+        return tl;
+}
 
-        .from("#dot9", {fillOpacity:0.25},"appear12")
-        .from("#dot17", {fillOpacity:0.25},"appear13")
+// function DotsFlicker(){
+//   var tl = gsap.timeline({duration:2})
+//       tl.to("#dot1", {alpha:0.25})
 
-        .from("#dot4", {fillOpacity:0.25},"appear14")
-        .from("#dot15", {fillOpacity:0.25},"appear15")
+//         .to("#dot3", {alpha:0.25})
+//         .to("#dot19", {alpha:0.25})
 
-        .from("#dot7", {fillOpacity:0.25},"appear16")
-        .from("#dot13", {fillOpacity:0.25},"appear17")
-        .from("#dot14", {fillOpacity:0.25},"appear18")
+//         .to("#dot12", {fillOpacity:0.10})
 
-        .from("#dot2", {fillOpacity:0.25},"appear19")
+//         .to("#dot10", {fillOpacity:0.10})
+//         .to("#dot18", {fillOpacity:0.10})
 
-        .from("#dot5", {visibility:"hidden"})
-        .from("#dot6", {visibility:"hidden"})
-        .from("#dot11", {visibility:"hidden"})
-        .from("#dot16", {visibility:"hidden"})
+//         .to("#dot9", {fillOpacity:0.10})
+//         .to("#dot17", {fillOpacity:0.10})
 
-        .to("#dot10", {duration: 0.5, fill:"white"})
+//         .to("#dot4", {fillOpacity:0.10})
+//         .to("#dot15", {fillOpacity:0.10})
 
-        // .from("#dot9", {opacity:0},"appear3")
-        // .from("#dot10", {opacity:0},"appear4")
-        // .from("#dot17", {opacity:0},"appear5")
-        // .from("#dot18", {opacity:0},"appear6")
-        // .from("#dot19", {opacity:0},"appear7")
+//         .to("#dot7", {fillOpacity:0.10})
+//         .to("#dot13", {fillOpacity:0.10})
+//         .to("#dot14", {fillOpacity:0.10})
 
-        // .from("#dot4", {opacity:0},"appear8")
-        // .from("#dot7", {opacity:0},"appear9")
-        // .from("#dot13", {opacity:0},"appear10")
-        // .from("#dot14", {opacity:0},"appear11")
-        // .from("#dot15", {opacity:0},"appear12")
+//         .to("#dot2", {fillOpacity:0.10})
 
-        // .from("#dot2", {opacity:0},"appear13")
-        // .from("#dot8", {opacity:0})
+//         .to("#dot5", {opacity:0.10})
+//         .to("#dot6", {opacity:0.10})
+//         .to("#dot11", {opacity:0.10})
+//         .to("#dot16", {opacity:0.10})
 
-        // .from("#dot5", {opacity:0},"appear14")
-        // .from("#dot16", {opacity:0},"appear15")
-        
-        // .from("#dot6", {opacity:0},"appear7")
-        // .from("#dot11", {opacity:0},"appear7")
+//         return tl;
+// }
+
+function Voriletters(){
+  var tl = gsap.timeline({duration:2})
+      tl.from("vori-i", {x:150})
         return tl;
 }
 
 
+
+
    var mainTimeline = gsap.timeline();
-  mainTimeline.add(FadeAnimation());
-    // .add(groceryAnimation())
+  mainTimeline.add(DotsFadein())
+      //  .add(DotsFlicker())
+       .add(Voriletters());
     // .add(aboutAnimation())
     // .add(wonderAnimation());
 
