@@ -6,17 +6,25 @@ gsap.registerPlugin(GSDevTools);
 
 function CameraBody(){
     var tl = gsap.timeline()
-        tl.from("#cam_body_rectangle", {alpha:0})
-
-
+        tl.from("#cam_body_rectangle", {scale:0.3, transformOrigin: 'center', duration:0.75})
 
     return tl;
 }
+
+function Rectangle(){
+    var tl = gsap.timeline()
+        tl.from("#line_through_camera", {x: -300})
+          .to("#line_through_camera", {delay: 4, x: 20})
+
+    return tl;
+}
+
+
   
 
 var mainTimeline = gsap.timeline();
 mainTimeline.add(CameraBody())
-    //  .add(VoriWhiteTriangle())
+     .add(Rectangle())
     //  .add(TriangleClip());
 
 
