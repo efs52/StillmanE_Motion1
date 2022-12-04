@@ -3,26 +3,16 @@ import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(GSDevTools);
 
-"cam_body_rectangle"
+
+function DotsFadein(){
+    var tl = gsap.timeline()
+        tl.from("#cam_body_rectangle", {alpha:0})
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    return tl;
+}
+  
 
 
 
